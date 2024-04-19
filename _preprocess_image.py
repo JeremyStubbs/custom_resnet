@@ -46,8 +46,10 @@ def preprocess_image(filepath):
         img = img[0:224, 0:224]
         # print('new image dimensions =' , img.shape)
 
-    # img = preprocess_input(img)
-        
+    # Can do the same thing with
+    # image = Image.open(source_path)
+    # image.thumbnail((224,224), Image.ANTIALIAS)
+    # image.save(dest_path, "JPEG")
 
     # cv2.imshow('image',img)
     # cv2.waitKey(0) 
